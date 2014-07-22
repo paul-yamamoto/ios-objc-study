@@ -9,7 +9,7 @@
 #import "THCrystalBall.h"
 
 @implementation THCrystalBall
-
+//ランダムに出力する文字列を初期化
 - (NSArray *) predictions {
     if (_predictions == nil){
         _predictions = [[NSArray alloc] initWithObjects:@"あめんぼあかいなあいうえお",
@@ -25,21 +25,10 @@
     return _predictions;
 }
 
+//ランダムに出力する文字列を出力
 - (NSString*) randomPrediction {
     int random = arc4random_uniform(self.predictions.count);
     return [self.predictions objectAtIndex:random];
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-

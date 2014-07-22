@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.crystalBall = [[THCrystalBall alloc] init];        
+	self.crystalBall = [[THCrystalBall alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,11 +50,11 @@
 }
 
 #pragma mark - Touch Events
-
+//一旦メッセージを空に
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     self.predictionLabel.text = nil;
 }
-
+//Touch イベント終了後にメッセージを出力
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [self makePrediction];
 }
@@ -64,26 +64,3 @@
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
